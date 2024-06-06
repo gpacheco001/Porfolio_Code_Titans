@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(270deg, #ff8a00, #4742a6);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff; /* Cambia el color del texto para mayor contraste */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(41, 59, 77, 0.8);
+    border-radius: 8px;
+    margin: 1rem;
+  }
+  
+  .title-principal {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .subTitle {
+    margin: 0;
+  }
+  
+  .name-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .sobre-nosotros,
+  .experiencia,
+  .estudios {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem; /* Aumenta el margen superior e inferior para la separación */
+  }
+  
+  .container-experiencia,
+  .container-estudios,
+  .cantainer-SN {
+    padding: 1rem;
+    background-color: rgba(53, 46, 46, 0.8);
+    border-radius: 9px;
+    text-align: center;
+    margin: 2 rem 0; /* Añade margen superior e inferior para la separación */
+  }
+  
+  /* Estilos para tamaño escritorio */
+  @media (min-width: 1024px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .navigation {
+      flex-direction: row;
+      gap: 2rem;
+      margin: 0;
+    }
+  
+    main {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2rem 3rem;
+    }
+  
+    .sobre-nosotros,
+    .experiencia,
+    .estudios {
+      width: 45%;
+    }
+  }
+  
